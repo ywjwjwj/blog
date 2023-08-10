@@ -40,7 +40,7 @@ jobs:
       - run: npm install -g pnpm # 安装第三方包
       - run: pnpm install # 安装第三方包
       - run: pnpm build # 打包
-      - run: tar -zcvf release.tgz -C output .
+      - run: tar -zcvf release.tgz -C .output .
       # 把.nuxt、nuxt.config.js等文件，打包压缩为release.tgz 不包含dist目录
       
       # 第三步：发布 Release
