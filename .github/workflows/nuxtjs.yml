@@ -79,6 +79,8 @@ jobs:
             cd /opt/web/blog 
             wget https://gh.yangood.top/https://github.com/ywjwjwj/blog/releases/latest/download/release.tgz -O release.tgz 
             tar zxvf release.tgz 
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             pm2 restart blog
 
 # cd /opt/web/blog && wget https://gh.yangood.top/https://github.com/ywjwjwj/blog/releases/latest/download/release.tgz -O release.tgz && tar zxvf release.tgz && pm2 restart blog
