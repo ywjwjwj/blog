@@ -24,7 +24,7 @@ const props = defineProps({
     },
     imageWidth: {
         type: String,
-        default: ''
+        default: '85px'
     },
     href: {
         type: String,
