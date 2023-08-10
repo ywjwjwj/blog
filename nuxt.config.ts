@@ -9,5 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
   ]
 })
