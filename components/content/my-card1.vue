@@ -57,6 +57,6 @@ const linkTo = async () => {
             <p>{{ description }}</p>
         </div>
         
-        <nuxt-img :class="imageClass" :width="imageWidth" :src="image" v-if="image != image.default"></nuxt-img>
+        <nuxt-img :class="imageClass" :width="imageWidth" :src="image" v-if="image"></nuxt-img>
     </div>
 </template>

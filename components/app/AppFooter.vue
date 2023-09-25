@@ -40,7 +40,7 @@ const nbSocialIcons = computed(() => (socialIcons.value ? socialIconsCount.value
 					<IconEmail v-if="icon.email" />
 					<div v-if="icon.img" class="avatar my-avatar-icon tooltip" :data-tip="icon.label">
 						<!-- <div class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 bg-blue-950 ring-offset-4"> -->
-						<nuxt-img height="48px"  class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 bg-blue-950 ring-offset-4" :src="icon.img" :alt="icon.label" />
+						<NuxtImg height="48px"  class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 bg-blue-950 ring-offset-4" :src="icon.img" :alt="icon.label" />
 						<!-- </div> -->
 					</div>
 					<Icon v-if="icon.icon" :name="icon.icon" />

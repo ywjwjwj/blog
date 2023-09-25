@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
 
   modules: [
-    '@nuxthq/ui',
+    '@nuxt/ui',
     // https://github.com/nuxt-modules/plausible
     '@nuxtjs/plausible',
     // https://github.com/nuxt/devtools
@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
   ui: {
-    prefix: ''
+    global: true,
+    icons: ['heroicons', 'fluent-emoji-high-contrast', 'mdi', 'simple-icons']
   },
   runtimeConfig: {
     public: {

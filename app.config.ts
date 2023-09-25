@@ -47,12 +47,12 @@ export default defineAppConfig({
         },
       ],
       iconLinks: [
-        {
-          label: 'Powered by Docus',
-          href: 'https://docus.dev',
-          img: '/docus.ico',
-          icon: ''
-        },
+        // {
+        //   label: 'Powered by Docus',
+        //   href: 'https://docus.dev',
+        //   img: '/img/docus.png',
+        //   icon: ''
+        // },
         {
           label: 'dogyun',
           href: 'https://www.dogyun.com/?ref=dogyunyang',

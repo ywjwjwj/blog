@@ -10,11 +10,11 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
     "@nuxt-themes/docus": "^1.14.6",
     "@nuxt/devtools": "^0.6.7",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image": "1.0.0-rc.1",
+    "@nuxt/ui": "npm:@nuxt/ui-edge@latest",
     "@nuxtjs/plausible": "^0.2.1",
     "@types/node": "^20.4.0",
     "eslint": "^8.44.0",
@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@docsearch/js": "^3.5.1",
+    "@iconify/json": "^2.2.120",
+    "@nuxt/ui-edge": "2.8.1-28259138.6887f73",
     "nuxt-socket-io": "^3.0.13",
     "socket.io-client": "^4.7.2"
   }
