@@ -53,6 +53,12 @@ export default defineAppConfig({
           img: '/docus.ico',
           icon: ''
         },
+        {
+          label: 'dogyun',
+          href: 'https://www.dogyun.com/?ref=dogyunyang',
+          img: '/image/dogyun.png',
+          icon: ''
+        },
         // {
         //   href: 'tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1978505627&website=www.oicqzone.com',
         //   label:'1978505627@qq.com',

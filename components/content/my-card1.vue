@@ -23,12 +23,16 @@ const props = defineProps({
         default: ''
     },
     imageWidth: {
-        type: String,
-        default: '85px'
+        type: Number,
+        default: 85
     },
     href: {
         type: String,
         default: ''
+    },
+    showImg: {
+        type: Boolean,
+        default: false
     }
 })
 
@@ -52,6 +56,7 @@ const linkTo = async () => {
             </h2>
             <p>{{ description }}</p>
         </div>
-        <nuxt-img :class="imageClass" :width="imageWidth" :src="image" v-if="image"></nuxt-img>
+        
+        <nuxt-img :class="imageClass" :width="imageWidth" :src="image" v-if="image != image.default"></nuxt-img>
     </div>
 </template>

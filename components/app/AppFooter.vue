@@ -38,15 +38,16 @@ const nbSocialIcons = computed(() => (socialIcons.value ? socialIconsCount.value
 					:aria-label="icon.label" :href="icon.href" target="_blank" :rel="icon?.rel || 'noopener noreferrer'">
 					<IconBiTencentQq v-if="icon.BiTencentQq" />
 					<IconEmail v-if="icon.email" />
-					<div v-if="icon.img" class="avatar my-avatar-icon bg-red-600 tooltip" :data-tip="icon.label">
-						<div class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-							<img :src="icon.img" :alt="icon.label" />
-						</div>
+					<div v-if="icon.img" class="avatar my-avatar-icon tooltip" :data-tip="icon.label">
+						<!-- <div class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 bg-blue-950 ring-offset-4"> -->
+						<nuxt-img height="48px"  class="max-w-4 rounded-full ring ring-primary ring-offset-base-100 bg-blue-950 ring-offset-4" :src="icon.img" :alt="icon.label" />
+						<!-- </div> -->
 					</div>
 					<Icon v-if="icon.icon" :name="icon.icon" />
 				</a>
 				<AppSocialIcons ref="socialIcons" />
 			</div>
+			
 		</Container>
 	</footer>
 </template>
@@ -187,11 +188,7 @@ css({
 					padding: '{space.4}'
 				}
 
-				,
-
-				'.my-avatar-icon': {
-					width: '16px',
-				}
+				
 			}
 
 			,
